@@ -5,7 +5,7 @@ import { ReactComponent as Dogs } from '../Assets/dogs.svg';
 import { UserContext } from '../UserContext';
 
 const Header = () => {
-  const { data } = React.useContext(UserContext);
+  const { data, userLogout } = React.useContext(UserContext);
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
@@ -16,7 +16,10 @@ const Header = () => {
         {/* caso data exista mostra minha conta ao contraio mostra login/criar */}
 
         {data ? (
-          <Link to='/conta'>{data.nome}</Link>
+          <>
+            <Link to='/conta'>{data.nome}</Link>
+            <button onClick={userLogout}>Sair</button>
+          </>
         ) : (
           <Link className={styles.login} to='/login'>
             Login / Criar
