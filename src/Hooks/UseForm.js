@@ -12,9 +12,13 @@ const types = {
     message:
       'Deve conter pelo menos: 1 letra maiuscula, 1 minuscula, 1 digito e ter no minimo 8 caracteres',
   },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize números apenas',
+  },
 };
 
-const UseForm = (type) => {
+const useForm = (type) => {
   const [value, setValue] = React.useState('');
   const [error, setError] = React.useState('');
 
@@ -47,4 +51,4 @@ const UseForm = (type) => {
   };
 };
 
-export default UseForm;
+export default useForm;

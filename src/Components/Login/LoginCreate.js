@@ -2,16 +2,16 @@ import React from 'react';
 
 import { USER_POST } from '../../api';
 import { UserContext } from '../../UserContext';
-import UseForm from '../../Hooks/UseForm';
+import useForm from '../../Hooks/useForm';
 import Button from '../Forms/Button';
 import Input from '../Forms/Input';
 import useFetch from '../../Hooks/useFetch';
 import Error from '../Helper/Error';
 
 const LoginCreate = () => {
-  const username = UseForm();
-  const email = UseForm('email');
-  const password = UseForm('password');
+  const username = useForm();
+  const email = useForm('email');
+  const password = useForm('password');
 
   const { userLogin } = React.useContext(UserContext);
   const { loading, error, request } = useFetch();
