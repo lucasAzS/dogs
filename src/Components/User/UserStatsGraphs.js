@@ -8,6 +8,7 @@ const UserStatsGraphs = ({ data }) => {
   const [total, setTotal] = React.useState(0);
 
   React.useEffect(() => {
+    // console.log(data);
     const graphData = data.map((item) => {
       return {
         x: item.title,
@@ -15,9 +16,12 @@ const UserStatsGraphs = ({ data }) => {
       };
     });
 
-    setTotal(
-      data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b)
-    );
+    if (data.length < 0) {
+      setTotal(
+        data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b)
+      );
+    }
+
     setGraph(graphData);
   }, [data]);
 
