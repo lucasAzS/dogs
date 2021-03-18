@@ -4,6 +4,13 @@
   gap: 2rem;
   margin-bottom: 2rem;
 }
+
+@media (min-width: 40rem) {
+  .photoPost {
+    grid-template-columns: 1fr;
+  }
+}
+
 .file {
   margin-bottom: 1rem;
 }
