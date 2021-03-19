@@ -1,7 +1,7 @@
   [[redirects]]
   from = "/login/resetar/"
   to = "/login/resetar/"
-  force = "true"
+  force = true
 [[redirects]]
   from = "/login/*"
   to = "/"
