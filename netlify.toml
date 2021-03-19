@@ -1,3 +1,6 @@
 [[redirects]]
-  from = "/*"
+  from = "/login/*"
+  to = "/"
+[[redirects]]
+  from = "/conta/*"
   to = "/"
