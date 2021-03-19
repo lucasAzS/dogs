@@ -5,3 +5,6 @@
 [[redirects]]
   from = "/conta/*"
   to = "/"
+  [[redirects]]
+  from = "/login/resetar"
+  to = "/login/"
