@@ -3,5 +3,5 @@
   to = "/"
   from = "/conta"
   to = "/"
-  from "/*"
+  from = "/*"
   to = "/"
