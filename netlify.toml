@@ -1,10 +1,5 @@
 
 [[redirects]]
-  from = "/login"
-  to = "/"
-[[redirects]]
-  from = "/conta/*"
-  to = "/"
-  [[redirects]]
-  from = "/login/resetar"
-  to = "/login/"
+  from = "/*"
+  to = "/index.html"
+  status = 200
