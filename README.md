@@ -4,7 +4,7 @@
 
 Uma rede social para cachorros.
 
-https://dogslucasaz.netlify.app/
+confira aqui: https://dogslucasaz.netlify.app/
 
 ## Tecnogias usadas:
 
